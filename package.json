@@ -1,0 +1,31 @@
+{
+  "name": "replace-key",
+  "version": "0.0.0",
+  "description": "Replace the Key in an Object",
+  "main": "replace-key.js",
+  "files": [
+    "replace-key.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/replace-key.git"
+  },
+  "keywords": [
+    "change",
+    "key",
+    "obj",
+    "replace"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/replace-key/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/replace-key#readme",
+  "devDependencies": {
+    "flug": "^0.0.0"
+  }
+}
