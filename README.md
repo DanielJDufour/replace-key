@@ -1,5 +1,5 @@
 # replace-key
-> Change the Key in an Object
+> Replace the Key in an Object
 
 # install
 ```bash
