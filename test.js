@@ -4,7 +4,7 @@ const replaceKey = require("./replace-key");
 test("throwing error if key not found", ({ eq }) => {
   let message;
   try {
-    replaceKey({ obj: {}, old_key: 'a', new_key: 'b' });
+    replaceKey({ obj: {}, old_key: "a", new_key: "b" });
   } catch (error) {
     message = error.toString();
   }
@@ -14,7 +14,7 @@ test("throwing error if key not found", ({ eq }) => {
 test("throwing error if key not found", ({ eq }) => {
   let message;
   try {
-    replaceKey({ obj: null, old_key: 'a', new_key: 'b' });
+    replaceKey({ obj: null, old_key: "a", new_key: "b" });
   } catch (error) {
     message = error.toString();
   }
@@ -23,11 +23,16 @@ test("throwing error if key not found", ({ eq }) => {
 
 test("replace in place", ({ eq }) => {
   const obj = { a: 1 };
-  replaceKey({ obj, old_key: 'a', new_key: 'b' });
+  replaceKey({ obj, old_key: "a", new_key: "b" });
   eq(obj, { b: 1 });
 });
 
 test("replace returns the modified obj", ({ eq }) => {
-  const obj = replaceKey({ obj: { a: 1 }, old_key: 'a', new_key: 'b' });
+  const obj = replaceKey({ obj: { a: 1 }, old_key: "a", new_key: "b" });
+  eq(obj, { b: 1 });
+});
+
+test("3 params", ({ eq }) => {
+  const obj = replaceKey({ a: 1 }, "a", "b");
   eq(obj, { b: 1 });
 });
