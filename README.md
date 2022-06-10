@@ -1,6 +1,11 @@
 # replace-key
 > Replace the Key in an Object
 
+# features
+- simple
+- universal support (AMD, CJS, IIFE, and ESM)
+- works in Web Workers
+
 # install
 ```bash
 npm install replace-key
